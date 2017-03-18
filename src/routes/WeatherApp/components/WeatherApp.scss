@@ -1,0 +1,16 @@
+.container{
+  background-color: #feffff;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+}
+.newsContainer{
+  display: flex;
+  flex-direction: row;
+}
+.leftContainer{
+  height: 100%;
+  background-color: #818181;
+  width: 100px;
+}
