@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'react-router'
 import './NewsApp.scss'
 
 class NewsApp extends React.Component{
@@ -33,6 +34,7 @@ class NewsApp extends React.Component{
       let article = news.articles;
       if (article) {
         rightContainer = article.map((Obj,key)=>{
+          console.log(Obj);
           return(
             <div key={key} className="newsComponentContainer">
               <img src={Obj.urlToImage} className="newsComponent_image"/>
@@ -47,11 +49,11 @@ class NewsApp extends React.Component{
       <div className="container">
 
         <div className="newsContainer">
-          <div className="leftContainer">
+          <div className="leftContainer_component">
             <div className="headerComponent">
               Daily News
             </div>
-            {leftContainer}
+            <div className="leftContainer">{leftContainer}</div>
           </div>
 
           <div className="rightContainer">
