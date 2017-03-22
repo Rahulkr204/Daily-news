@@ -1,0 +1,61 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.headerContainer{
+  display: flex;
+  flex-direction: row;
+  background-color: #171717;
+  color: #ffffff;
+  font-size: 18px;
+}
+.headerContainer_logo{
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+}
+.headerContainer_title{
+  margin-top: 28px;
+  margin-left: 24px;
+  font-size: 20px;
+}
+.bodyContainer{
+  margin: 2% 8%;
+}
+.songContainer{
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #bebebe;
+  padding: 0;
+}
+.songComponent{
+  padding: 0;
+  margin: 16px 0;
+}
+.filters{
+  margin: 1% 7%;
+}
+.searchIcon{
+  height: 18px;
+  width: 18px;
+}
+.search{
+  width: 100%;
+  line-height: 18px;
+}
+.searchContainer{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 24px;
+  border-bottom: 1px solid #000;
+  margin: 8px 0;
+}
+.searchContainer input[type=search] {
+    width: 100%;
+    font-size: 16px;
+    margin: 0 8px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}

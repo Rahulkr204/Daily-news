@@ -40,6 +40,24 @@ export const onClickSourceFetchNews = (params) => {       //Fetch kcs thunk
     });
   }
 }
+// '+{params}+'
+export const onSourceChange = (params) => {       //Fetch kcs thunk
+  return (dispatch, getState) => {
+    return new Promise((resolve) => {
+      dispatch(isSourceLoading(true));
+      request
+      .get('https://newsapi.org/v1/sources?language=en')
+      .send()
+      .end(function(err, res){
+        if(!err){
+          dispatch(onFetchSources(res.body));
+          dispatch(isSourceLoading(false));
+          resolve();
+        }
+      });
+    });
+  }
+}
 
 
 // ------------------------------------
