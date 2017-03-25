@@ -3,6 +3,8 @@ import CoreLayout from '../layouts/CoreLayout'
 import Home from './Home'
 import NewsAppRoute from './NewsApp'
 import ProjectsRoute from './Projects'
+import MovieAppRoute from './MovieApp'
+
 
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
@@ -13,7 +15,8 @@ export const createRoutes = (store) => ({
   indexRoute  : Home,
   childRoutes : [
     NewsAppRoute(store),
-    ProjectsRoute(store)
+    ProjectsRoute(store),
+    MovieAppRoute(store)
   ]
 })
 

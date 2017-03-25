@@ -1,6 +1,6 @@
-import NewsApp from '../NewsApp/components/NewsApp'
+import HomeView from './components/HomeView'
 
 // Sync route definition
 export default {
-  component : NewsApp
+  component : HomeView
 }
