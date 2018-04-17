@@ -1,19 +1,5 @@
-sudo: false
-language: node_js
-node_js:
-  - "6"
-
-cache:
-  directories:
-    - node_modules
-
-install:
-  - npm install -g yarn
-  - yarn install
-
-script:
-  - npm run deploy:dev
-  - npm run deploy:prod
-
-after_success:
-  - npm run codecov
+deploy:
+  provider: s3
+  access_key_id: "AKIAI6HJ4LDJMCCMKXPQ"
+  secret_access_key: "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"
+  bucket: "S3 Bucket"

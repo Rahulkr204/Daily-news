@@ -10,7 +10,7 @@ class Projects extends React.Component{
     return(
       <div className="container">
         {this.props.children?this.props.children:
-          <div>Lol</div>
+          <div>Projects</div>
         }
       </div>
     )
